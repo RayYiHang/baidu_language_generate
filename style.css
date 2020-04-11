@@ -1,0 +1,140 @@
+html {
+    font-size: 50px;
+    height: 100%;
+}
+body {
+    margin: 0 auto;
+    font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: .5rem;
+    line-height: .6rem;
+    height: .6rem;
+    text-align: center;
+    color: #2932E1;
+}
+.head-inner {
+    color: #DC4B32;
+}
+.head {
+    margin-top: .2rem;
+}
+input {
+    height: .62rem;
+    box-sizing: border-box;
+}
+.generate-inner:hover,
+.result-copy:hover,
+.generate-reset:hover,
+.generate-inner:active,
+.result-copy:active {
+    background-color: #2932E1;
+}
+.main {
+    margin: .5rem;
+}
+.info {
+    width: 100%;
+    overflow: hidden;
+}
+.subject{
+    float: left;
+    width: 45%;
+    background-color: #fff;
+    border: #DC4B32 solid .03rem;
+    border-radius: .1rem;
+    line-height: .62rem;
+    text-align: center;
+    padding: 0 .1rem;
+    
+}
+.subject:focus {
+    outline: none;
+    border: #2932E1 solid .03rem;
+}
+.verb {
+    float: right;
+    width: 45%;
+    background-color: #fff;
+    border: #DC4B32 solid .03rem;
+    border-radius: .1rem;
+    line-height: .62rem;
+    text-align: center;
+    padding: 0 .1rem;
+}
+.verb:focus {
+    outline: none;
+    border: #2932E1 solid .03rem;
+}
+.generate {
+    padding-top: .4rem;
+}
+.generate-inner {
+    width: 33%;
+    line-height: .7rem;
+    height: .7rem;
+    margin: 0 auto;
+    text-align: center;
+    background: #DC4B32;
+    font-size: .3rem;
+    color:#fff;
+    border-radius: .17rem;
+}
+.generate-reset {
+    width: 28%;
+    line-height: .5rem;
+    height: .5rem;
+    margin: 0 auto;
+    text-align: center;
+    background: #DC4B32;
+    font-size: .3rem;
+    color:#fff;
+    border-radius: .2rem;
+    margin-top: .4rem;
+}
+
+.result {
+    width: 75%;
+}
+.result-inner {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border: .05rem solid #DC4B32;
+    border-radius: .1rem;
+    outline-style: none;
+    margin-bottom: .3rem;
+    padding: .1rem ;
+    font-size: .29rem;
+}
+
+.result-inner:focus {
+    outline: none;
+    border: .05rem solid #2932E1;
+}
+
+.result-copy {
+    width: 20%;
+    line-height: .4rem;
+    height: .4rem;
+    margin: 0 auto;
+    text-align: center;
+    background: #2932E1;
+    font-size: .2rem;
+    color:#fff;
+    border-radius: .2rem;
+}
+.footer {
+    margin-top: .7rem;
+    font-size: .3rem;
+    background-image:-webkit-linear-gradient(left bottom,#DC4B32,#2932E1); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+}

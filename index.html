@@ -1,9 +1,59 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Untitled Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+<title>百度体生成器</title>
 </head>
-
 <body>
+    <div class="container">
+        <div class="head">
+            <h1><span class="head-inner">百度体</span>生成器</h1>
+        </div>
+        <div class="main">
+            <div class="info">
+                <input v-model="subject" class="subject" type="text" placeholder="输入主题" >
+                <input v-model="verb" class="verb" type="text" placeholder="输入动作" >
+            </div>
+            <div class="generate">
+                <div @click="handleGenerate" class="generate-inner">生成</div>
+                
+            </div>
+        </div>
+        <div class="result" v-if="resultShow">
+            <textarea class="result-inner">{{ content }}</textarea>
+            <!-- <div class="result-copy">
+                复制
+            </div> -->
+            <div class="generate-reset" @click="handleReset">重置</div>
+        </div>
+        <div class="footer">
+            copyright by ©️LYH
+        </div>
+    </div>
+<script>
+    new Vue({
+        el: '.container',
+        data: {
+            subject: '',
+            verb: '',
+            content: '',
+            resultShow: false
+        },
+        methods: {
+            handleGenerate () {
+                this.resultShow = true;
+                this.content = this.subject + this.verb + '是怎么回事呢?' + this.subject + '相信大家都很熟悉，但是' + this.verb + '是怎么回事呢？下面就让小编带大家一起了解吧 。' + this.subject + this.verb + '，其实就是' + this.verb + '了。那么' + this.subject + '为什么会' + this.verb + '，相信大家都很好奇是怎么回事。大家可能会感到很惊讶，' + this.subject + '怎么，会' + this.verb + '呢？但事实就是这样，小编也感到非常惊讶。那么这就是关于' + this.subject + this.verb + '的事情了，大家有没有觉得很神奇呢？看了今天的内容，大家有什么想法呢？欢迎在评论区告诉小编一起讨论哦.';
+            },
+            handleReset () {
+                this.resultShow = false;
+                this.subject = '';
+                this.verb = '';
+            }
+        },
+    })
+</script>
 </body>
 </html>
