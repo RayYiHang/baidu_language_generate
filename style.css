@@ -87,7 +87,7 @@ input {
     border-radius: .17rem;
 }
 .generate-reset {
-    width: 28%;
+    width: 20%;
     line-height: .5rem;
     height: .5rem;
     margin: 0 auto;
@@ -95,7 +95,7 @@ input {
     background: #DC4B32;
     font-size: .3rem;
     color:#fff;
-    border-radius: .2rem;
+    border-radius: .15rem;
     margin-top: .4rem;
 }
 
